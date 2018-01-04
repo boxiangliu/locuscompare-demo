@@ -1,0 +1,12 @@
+name: locuscompare-demo
+title: locuscompare-demo
+username:
+account: boxiangliu
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 253574
+bundleId: 1161280
+url: https://boxiangliu.shinyapps.io/locuscompare-demo/
+when: 1515049954.72316
+asMultiple: FALSE
+asStatic: FALSE
