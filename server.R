@@ -8,9 +8,10 @@ source('locuscompare.R')
 
 
 #----------------------- User Input ---------------------------#
-tmp_dir='tmp/' # temporary directory
-in_fn1='data/eqtl.txt' # input file 1
-in_fn2='data/gwas.txt' # input file 2
+home_dir='/srv/shiny-server/locuscompare-demo/'
+tmp_dir=paste0(home_dir,'tmp/') # temporary directory
+in_fn1=paste0(home_dir,'data/eqtl.txt') # input file 1
+in_fn2=paste0(home_dir,'data/gwas.txt') # input file 2
 # tabix='/Users/boshliu/Documents/tools/htslib/bin/tabix' # path to tabix
 # bgzip='/Users/boshliu/Documents/tools/htslib/bin/bgzip' # path to bgzip
 # plink='/Users/boshliu/Documents/tools/plink_mac//plink' # path to plink
