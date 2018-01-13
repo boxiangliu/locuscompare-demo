@@ -23,7 +23,7 @@ title2='Study 2' # Study 2 name
 
 
 # Variables: 
-panel='data/integrated_call_samples_v3.20130502.ALL.panel' 
+panel=paste0(home_dir,'data/integrated_call_samples_v3.20130502.ALL.panel')
 if (!dir.exists(tmp_dir)){dir.create(tmp_dir,recursive=TRUE)}
 
 # Functions:
@@ -65,7 +65,7 @@ shinyServer(function(input, output, session) {
     })
     
     observeEvent(input$population,{
-        values$ld=readRDS(sprintf('data/ld_%s.rda',input$population))
+        values$ld=readRDS(sprintf('%s/data/ld_%s.rda',home_dir,input$population))
         values$snp_plot=snp_init
         values$color=assign_color(merged$rsid,snp_init,values$ld)
         values$shape=assign_shape(merged,snp_init)
