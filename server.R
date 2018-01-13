@@ -1,14 +1,15 @@
 # Server file for LocusCompare
 # Boxiang Liu
 # 2018-01-01
+home_dir='/srv/shiny-server/locuscompare-demo/'
 
 library(shiny)
 library(DT)
-source('locuscompare.R')
+source(paste0(home_dir,'locuscompare.R'))
 
 
 #----------------------- User Input ---------------------------#
-home_dir='/srv/shiny-server/locuscompare-demo/'
+
 tmp_dir=paste0(home_dir,'tmp/') # temporary directory
 in_fn1=paste0(home_dir,'data/eqtl.txt') # input file 1
 in_fn2=paste0(home_dir,'data/gwas.txt') # input file 2
