@@ -13,6 +13,7 @@ source(paste0(home_dir,'locuscompare.R'))
 tmp_dir=paste0(home_dir,'tmp/') # temporary directory
 in_fn1=paste0(home_dir,'data/eqtl.txt') # input file 1
 in_fn2=paste0(home_dir,'data/gwas.txt') # input file 2
+cat(file=stderr(), in_fn1, "\n")
 # tabix='/Users/boshliu/Documents/tools/htslib/bin/tabix' # path to tabix
 # bgzip='/Users/boshliu/Documents/tools/htslib/bin/bgzip' # path to bgzip
 # plink='/Users/boshliu/Documents/tools/plink_mac//plink' # path to plink
